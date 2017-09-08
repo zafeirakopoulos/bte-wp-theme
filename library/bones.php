@@ -48,6 +48,7 @@ function bones_head_cleanup() {
 	add_filter( 'style_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 	// remove Wp version from scripts
 	add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
+	pll_the_languages( array( 'show_flags' => 1,'show_names' => 0 ) );
 
 } /* end bones head cleanup */
 
